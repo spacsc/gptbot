@@ -1,0 +1,5 @@
+# direnv outputs:
+.direnv/
+
+# nix build results:
+result/
