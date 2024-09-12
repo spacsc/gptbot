@@ -32,7 +32,12 @@
         };
 
         devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [];
+          buildInputs = with pkgs; [
+            go
+            go-tools
+            gotools
+            gopls
+          ];
         };
 
         formatter = inputs'.alejandra.packages.default;
